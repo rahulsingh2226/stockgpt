@@ -10,8 +10,10 @@ import yfinance as yf
 import matplotlib.pyplot as plt
 from matplotlib.ticker import FuncFormatter
 import requests
-import finnhub
 
+# --- Finnhub (init only; safe, optional) ---
+try:
+import finnhub # correct package name
 FINNHUB_API_KEY = st.secrets.get("FINNHUB_API_KEY") or os.getenv("FINNHUB_API_KEY")
 fh_client = finnhub.Client(api_key=FINNHUB_API_KEY) if FINNHUB_API_KEY else None
 except Exception:
