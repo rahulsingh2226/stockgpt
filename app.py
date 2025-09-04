@@ -12,7 +12,7 @@ from matplotlib.ticker import FuncFormatter
 import requests
 
 # --- Finnhub (init only; safe, optional) ---
-	try:
+try:
 import finnhub # correct package name
 FINNHUB_API_KEY = st.secrets.get("FINNHUB_API_KEY") or os.getenv("FINNHUB_API_KEY")
 fh_client = finnhub.Client(api_key=FINNHUB_API_KEY) if FINNHUB_API_KEY else None
