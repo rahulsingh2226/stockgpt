@@ -8,3 +8,4 @@ matplotlib
 plotly
 beautifulsoup4
 lxml
+finnhub-python
