@@ -1,0 +1,10 @@
+streamlit
+requests
+ollama
+pandas
+numpy
+yfinance
+matplotlib
+plotly
+beautifulsoup4
+lxml

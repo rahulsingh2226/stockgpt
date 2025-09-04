@@ -1,0 +1,25 @@
+# Ignore virtual environments
+.venv/
+venv/
+ENV/
+
+# Ignore Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pkl
+
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# Ignore IDE/project settings
+.vscode/
+.idea/
+
+# Ignore secret files
+*.env
+githubtoken.txt
+token.txt
+apikey.txt
